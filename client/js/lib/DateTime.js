@@ -1,7 +1,7 @@
 class DateTime {
     
     static textToDate(text){
-       return new Date(...text.split('-').map((item, indice) => item + item % 2));
+       return new Date(...text.split('-').map((item, indice) => item));
     }
 
     static dateTotext(date)
